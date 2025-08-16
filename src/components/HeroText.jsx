@@ -3,7 +3,6 @@ import { mixVisibility, motion } from "motion/react";
 
 const HeroText = () => {
     const words= ["Compilers", "AI", "Backend Logic", "Frontend Design"]
-    //const words= ["Arianna", "Kai", "Backend Shravani", "Darren"]
     const variants = {
         hidden: {opacity:0, x:-50},
         visible: {opacity:1, x:0},
