@@ -2,7 +2,7 @@ import { FlipWords } from "./FlipWords"
 import { mixVisibility, motion } from "motion/react";
 
 const HeroText = () => {
-    const words= ["Compilers", "AI", "Backend Logic", "Frontend Design"]
+    const words= ["Compilers", "Artificial Intelligence", "Backend Logic", "Frontend Design"]
     const variants = {
         hidden: {opacity:0, x:-50},
         visible: {opacity:1, x:0},
@@ -17,15 +17,15 @@ const HeroText = () => {
                 initial="hidden"
                 animate="visible"
                 transition={{delay:1}}
-            > Hello! I am Shravani</motion.h1>
+            > Hello, I am Shravani!</motion.h1>
             <div className="flex flex-col items-start">
-                <motion.p className="text-5xl font-medium text-neutral-300"
+                <motion.p className="text-5xl font-medium text-white"
                     variants = {variants}
                     initial="hidden"
                     animate="visible"
                     transition={{delay:1.2}}
                 >
-                    A Developer <br /> exploring tech through
+                    A Developer <br /> Exploring Technology through
                 </motion.p>
 
                <motion.div
@@ -37,7 +37,7 @@ const HeroText = () => {
                     className="font-black text-white text-8xl" />
                 </motion.div>
 
-                <motion.p className="text-4xl font-medium text-neutral-300"
+                <motion.p className="text-4xl font-medium text-white"
                 variants = {variants}
                 initial="hidden"
                 animate="visible"
@@ -53,22 +53,22 @@ const HeroText = () => {
                 variants = {variants}
                 initial="hidden"
                 animate="visible"
-                transition={{delay:1}}>Hello! I am Shravani</motion.p>
+                transition={{delay:1}}>Hi, I am Shravani!</motion.p>
             <div>
                 <motion.p className="text-5xl font-black text-neutral-300"
                     variants = {variants}
                     initial="hidden"
                     animate="visible"
-                    transition={{delay:1.2}}>Building </motion.p>
+                    transition={{delay:1.2}}>Exploring tech through </motion.p>
                 <motion.div variants = {variants}
                     initial="hidden"
                     animate="visible"
-                    transition={{delay:1.5}}> <FlipWords words={words} className="font-bold text-white text-7xl" /> </motion.div>
+                    transition={{delay:1.5}}> <FlipWords words={words} className="font-bold text-white text-7xl text-center" /> </motion.div>
                 <motion.p className="text-4xl font-black text-neutral-300"
                     variants = {variants}
                     initial="hidden"
                     animate="visible"
-                    transition={{delay:1.8}}>Web Applications</motion.p>
+                    transition={{delay:1.8}}>and curiosity</motion.p>
             </div>
         </div>
     </div>

@@ -18,9 +18,9 @@ const GLOBE_CONFIG  = {
   diffuse: 0.4,
   mapSamples: 16000,
   mapBrightness: 1.2,
-  baseColor: [1, 1, 1],
-  markerColor: [1, 1, 0],
-  glowColor: [1, 1, 0],
+  baseColor: [0, 1, 1],
+  markerColor: [0, 1, 1], /*[0.957, 0.447, 0.714] */
+  glowColor: [0, 1, 1],
   markers: [
     { location: [37.3382, -121.8863], size: 0.3 },
   ],
@@ -74,7 +74,7 @@ export function Globe({
       width: width * 2,
       height: width * 2,
       onRender: (state) => {
-        if (!pointerInteracting.current) phi += 0.005;
+        if (!pointerInteracting.current) phi += 0.01;
         state.phi = phi + rs.get();
         state.width = width * 2;
         state.height = width * 2;

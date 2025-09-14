@@ -41,7 +41,7 @@ const Navbar = () => {
           <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} className="w-6 h-6"
           alt = "toggle"  />
         </button>
-        <nav className="hidden sm:flex">
+        <nav className="hidden sm:flex ml-auto">
           <Navigation />
         </nav>
       </div>

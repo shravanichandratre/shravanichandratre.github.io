@@ -1,4 +1,5 @@
 export const myProjects = [
+  
   {
     id: 1,
     title: "GreenPulse 💚",
@@ -7,53 +8,161 @@ export const myProjects = [
     subDescription: [
       "Built FastAPI backend to manage user sessions, data & profile information, with secure authentication through JWT.",
       "Integrated Fetch.ai’s uAgents for context-aware decentralized communication between autonomous agents responsible for recording user activities, storing data & delivering personalized, real-time notifications based on user behavior.",
-      "ASI-1 LLM interprets natural language to extract activities, match them with emission factors & provide actionable sustainability guidance.",
-      "Used Gemini to create personalized notifications based on location, weather & behavior of user.",
-      "Stored the data in MongoDB, structured it into collections. The React frontend provided dashboards for users & companies.",
+      "ASI-1 LLM interpreted natural language to extract activities, match them with emission factors & provide actionable guidance. Used Gemini for personalized notifications based on location, weather & behavior of user.",
+      "Stored the data in MongoDB, and used React for dashboards of users & companies.",
     ],
     href: "https://github.com/adityarao97/GreenPulse",
     logo: "",
-    image: "/assets/projects/greenpulse1.jpg",
+    image: "/assets/projects/greenpulse_best.jpg",
     tags: [
       {
         id: 1,
-        name: "Agentic AI",
-        path: "/assets/logos/csharp.svg",
+        name: "Python",
+        path: "/assets/logos/icons8-python.svg",
       },
       {
         id: 2,
-        name: "LLM",
-        path: "/assets/logos/dotnet.svg",
+        name: "Agentic AI",
+        path: "/assets/logos/ai.svg",
       },
       {
         id: 3,
-        name: "FastAPI",
-        path: "/assets/logos/efcore.png",
+        name: "LLM",
+        path: "/assets/logos/gemini.svg",
       },
       {
         id: 4,
-        name: "React",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "FastAPI",
+        path: "/assets/logos/fastapi.svg",
       },
       {
         id: 5,
-        name: "Python",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
+      
       {
         id: 6,
         name: "MongoDB",
-        path: "/assets/logos/tailwindcss.svg",
+        path: "/assets/logos/mongodb.svg",
       },
     ],
   },
   {
     id: 2,
+    title: "LLVM Compiler Frontend",
+    description:
+      "Implemented a toy compiler frontend in C++ using LLVM APIs: lexer, recursive descent & operator precedence parser, AST, LLVM IR code generation, JIT execution, optimization passes, object file output and debug metadata support.",
+    subDescription: [
+      
+      "Supported control flow (if/else, loops), functions (recursion), user-defined operators & integration with math libraries.",
+      "Delivered both a REPL-style JIT interface and compiled binaries with debug info, allowing breakpoint use in debuggers.",
+    ],
+    href: "https://llvm.org/docs/tutorial/",
+    logo: "",
+    image: "/assets/projects/llvm.png",
+    tags: [
+      {
+        id: 1,
+        name: "C++",
+        path: "/assets/logos/cplusplus.svg",
+      },
+      {
+        id: 2,
+        name: "LLVM",
+        path: "/assets/logos/llvm.svg",
+      },
+      {
+        id: 3,
+        name: "CMake",
+        path: "/assets/logos/cmake.svg",
+      },
+
+    ],
+  },
+  {
+    id: 3,
+    title: "CPU Simulator",
+    description:
+      "Developed 32-bit CPU with a custom Instruction Set Architecture (ISA) that models core CPU operations in C++.",
+    subDescription: [
+      
+      "Implemented memory segments (text, data, heap, stack) with address and memory segmentation (byte, word).",
+      "Added support for recursion by managing stack-based function calls within the fetch-decode-execute cycle.",
+    ],
+    href: "https://docs.google.com/document/d/1cjJw2sO6TudfMkgItajaZrmrSRTOTMPZ4uWXVCMnYt4/edit?usp=sharing",
+    logo: "",
+    image: "/assets/projects/cpu1.png",
+    tags: [
+      {
+        id: 1,
+        name: "C++",
+        path: "/assets/logos/cplusplus.svg",
+      },
+      {
+        id: 2,
+        name: "Computer Architecture",
+        path: "/assets/logos/blank.svg",
+      },
+
+    ],
+  },
+  
+  {
+    id: 4,
+    title: "Hotel Recommender",
+    description:
+      "Built personalized hotel recommendation system using NLP, content-based filtering (for cold start problem), collaborative filtering and Graph Neural Network to extract user preferences from 1M+ TripAdvisor reviews.",
+    subDescription: [
+      
+      "Extracted key hotel attributes using Sentence-BERT topic modeling and DistilBERT sentiment scores.",
+      "Engineered metadata-enhanced user–hotel graphs with GraphSAGE to learn latent patterns and contextual relationships.",
+      "Combined outputs using attention-based reranking to get top-5 recommendations.",
+    ],
+    href: "https://github.com/manaswi2399/Hotel_Recommendation_System",
+    logo: "",
+    image: "/assets/projects/architecture_hr.png",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "/assets/logos/icons8-python.svg",
+      },
+      {
+        id: 2,
+        name: "Pytorch",
+        path: "/assets/logos/pytorch.svg",
+      },
+      {
+        id: 3,
+        name: "NLP (BERT)",
+        path: "/assets/logos/deeplearning.svg",
+      },
+      {
+        id: 4,
+        name: "ALS (CF)",
+        path: "/assets/logos/pandas.svg",
+      },
+      {
+        id: 5,
+        name: "GNN",
+        path: "/assets/logos/numpy.svg",
+      },
+      {
+        id: 6,
+        name: "Reranking (Attention)",
+        path: "/assets/logos/blank.svg",
+      },
+    ],
+  },
+
+  {
+    id: 5,
     title: "MediVerse 🧸",
     description:
-      "This is an interactive mobile app that transforms daunting medical procedures into reassuring, personalized stories and engaging tasks to help pediatric patients bravely manage chronic diseases.",
+      "This is interactive mobile app that transforms medical procedures into personalized stories and tasks to help pediatric patients bravely manage chronic diseases.",
     subDescription: [
-      "Built interactive mobile app using React Native, FastAPI & MongoDB to support pediatric patients.",
+      "Built interactive mobile app using React Native, FastAPI & MongoDB.",
       "Integrated OpenAI LLM to generate personalized stories explaining medical procedures to reduce treatment anxiety.",
       "Built synchronized child and doctor interfaces enabling real-time voice-to-text capture of appointment details including date time and purpose followed by automatic calendar syncing with personalized task generation for the child app.",
       "Created reward-based avatar customization system and used Lottie animations to encourage task completion.",
@@ -64,81 +173,89 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "LLM",
-        path: "/assets/logos/auth0.svg",
+        name: "Python",
+        path: "/assets/logos/icons8-python.svg",
       },
       {
         id: 2,
+        name: "LLM",
+        path: "/assets/logos/openai.svg",
+      },
+      {
+        id: 3,
         name: "FastAPI",
+        path: "/assets/logos/fastapi.svg",
+      },
+      {
+        id: 4,
+        name: "React Native",
         path: "/assets/logos/react.svg",
       },
       {
-        id: 3,
-        name: "React Native",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "Animation",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-      {
         id: 5,
-        name: "Python",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Animation",
+        path: "/assets/logos/lottie.svg",
       },
+      
       {
         id: 6,
         name: "MongoDB",
-        path: "/assets/logos/tailwindcss.svg",
+        path: "/assets/logos/mongodb.svg",
       },
     ],
   },
+  
   {
-    id: 3,
-    title: "Hotel Recommender 🛎️",
+    id: 6,
+    title: "Hospital Treatment Recommender",
     description:
-      "This system intelligently learns your unique preferences from millions of reviews to deliver the perfect hotel recommendations, ensuring every stay is tailored just for you.",
+      "This system guides healthcare professionals by predicting optimal patient care decisions to enhance recovery and resource management.",
     subDescription: [
-      "Built personalized hotel recommendation system leveraging NLP, content-based filtering (for cold start problem), collaborative filtering and Graph Neural Network to extract user preferences from 1M+ TripAdvisor reviews.",
-      "Extracted key hotel attributes using Sentence-BERT topic modeling and DistilBERT sentiment scores.",
-      "Engineered metadata-enhanced user–hotel graphs with GraphSAGE to learn latent patterns and contextual relationships.",
-      "Combined outputs from CF, GNN & content-based models using attention-based reranking to get top-5 recommendations.",
+      "Developed a real-time recommendation system for hospitalized patient treatment using Reinforcement Learning.",
+      "Utilized MIMIC-III clinical data, cleaned and preprocessed it. Built Q-learning model which predicts 1 of 4 actions (continue treatment, discharge, ICU transfer and step-down care transfer) based on 28 features, with 85% accuracy.",
+      "System provides actionable insights for healthcare professionals, improving patient outcomes and resource allocation.",
     ],
-    href: "https://github.com/manaswi2399/Hotel_Recommendation_System",
+    href: "https://github.com/shravanichandratre/Hospital-Treatment-Recommender",
     logo: "",
-    image: "/assets/projects/architecture_hr.png",
+    image: "/assets/projects/htr_pro_image.PNG",
     tags: [
       {
         id: 1,
-        name: "Pytorch",
-        path: "/assets/logos/blazor.svg",
+        name: "Python",
+        path: "/assets/logos/icons8-python.svg",
       },
       {
         id: 2,
-        name: "NLP (BERT)",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "Reinforcement Learning",
+        path: "/assets/logos/ai.svg",
       },
       {
         id: 3,
-        name: "ALS (CF)",
-        path: "/assets/logos/sqlite.svg",
+        name: "Numpy",
+        path: "/assets/logos/numpy.svg",
       },
       {
         id: 4,
-        name: "GNN",
-        path: "/assets/logos/sqlite.svg",
+        name: "Scikit Learn",
+        path: "/assets/logos/scikit.svg",
       },
       {
         id: 5,
-        name: "Reranking (Attention)",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Pandas",
+        path: "/assets/logos/pandas.svg",
+      },
+      
+      {
+        id: 6,
+        name: "Jupyter Notebook",
+        path: "/assets/logos/jupyter.svg",
       },
     ],
   },
+
   {
-    id: 5,
-    title: "Enterprise Marketplace 🛍️",
+    id: 7,
+    title: "Enterprise Marketplace",
     description:
       "An online marketplace that unites the world of an art gallery with the practical efficiency of essential moving services, offering an integrated user experience.",
     subDescription: [
@@ -147,14 +264,14 @@ export const myProjects = [
       "Architected PHP-based backend with MySQL for robust user authentication, cross-site activity logging, and a unified review and rating system.",
       "Designed algorithms for presenting top-ranked services and products across integrated platforms.",
     ],
-    href: "https://bloomease.42web.io/",
+    href: "https://youtu.be/4BxjOh1X5MY?si=mGYmrSGZi6ADVEse",
     logo: "",
     image: "/assets/projects/boom_image.PNG",
     tags: [
       {
         id: 1,
         name: "JavaScript",
-        path: "/assets/logos/wordpress.svg",
+        path: "/assets/logos/javascript.svg",
       },
       {
         id: 2,
@@ -169,87 +286,16 @@ export const myProjects = [
       {
         id: 4,
         name: "PHP",
-        path: "/assets/logos/vitejs.svg",
+        path: "/assets/logos/php.svg",
       },
       {
         id: 5,
         name: "MySQL",
-        path: "/assets/logos/vitejs.svg",
+        path: "/assets/logos/sql.svg",
       },
     ],
   },
-  {
-    id: 6,
-    title: "Hospital Treatment Recommender ⚕️",
-    description:
-      "This system guides healthcare professionals by predicting optimal patient care decisions to enhance recovery and resource management.",
-    subDescription: [
-      "Developed a real-time recommendation system for hospitalized patient treatment using Reinforcement Learning.",
-      "Utilized MIMIC-III clinical data, cleaned and preprocessed it. Built Q-learning model which predicts 1 of 4 actions (continue treatment, discharge, ICU transfer and step-down care transfer) based on 28 features, with 85% accuracy.",
-      "System provides actionable insights for healthcare professionals, improving patient outcomes and resource allocation.",
-    ],
-    href: "https://github.com/shravanichandratre/Hospital-Treatment-Recommender",
-    logo: "",
-    image: "/assets/projects/htr_pro_image.PNG",
-    tags: [
-      {
-        id: 1,
-        name: "Reinforcement Learning",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Numpy",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Scikit Learn",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 4,
-        name: "Python",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 5,
-        name: "Jupyter Notebook",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "CPU Simulator 🧠",
-    description:
-      "This CPU simulator brings the fundamental operations of a computer's brain to life, precisely managing how it processes information and runs programs.",
-    subDescription: [
-      "Developed 32-bit CPU with a custom Instruction Set Architecture (ISA) that models core CPU operations in C++.",
-      "Implemented memory segments (text, data, heap, stack) with address and memory segmentation (byte, word).",
-      "Added support for recursion by managing stack-based function calls within the fetch-decode-execute cycle.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/game-engine.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
-      },
-      {
-        id: 2,
-        name: "Computer Architecture",
-        path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "CPU",
-        path: "/assets/logos/git.svg",
-      },
-    ],
-  },
+
 ];
 
 export const mySocials = [
@@ -258,6 +304,11 @@ export const mySocials = [
     name: "Linkedin",
     href: "https://www.linkedin.com/in/shravani-chandratre/",
     icon: "/assets/socials/linkedIn.svg",
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/shravanichandratre",
+    icon: "/assets/socials/github-mark-white.svg",
   },
   {
     name: "Instagram",
@@ -274,12 +325,12 @@ export const experiences = [
     contents: [
       "My coursework included Computer Architecture, System Software, Advanced Computer Design, AI & Data Engineering, Advanced Data Mining & Enterprise Software Platforms.",
       "My specialization is Machine Learning Engineering, where I'm gaining in-depth knowledge across the design of robust AI systems, and advanced data processing.",
-      "I have successfully completed two semesters and am now preparing for my third.",
+      "I have successfully completed two semesters and started with my third. I am learning about Security and Web UI Design this semester.",
     ],
   },
   {
     title: "Technology Intern",
-    job: "SQL and Web Development Projects",
+    job: "SQL and Web Development",
     date: "November 2023 - June 2024",
     contents: [
       "Improved data handling and user interface by upgrading an ERP software.",
@@ -289,7 +340,7 @@ export const experiences = [
   },
   {
     title: "Android Development Intern",
-    job: "Android Application Development",
+    job: "Application Development",
     date: "October 2021 - December 2021",
     contents: [
       "Developed and integrated a shopping cart module within an Android app using Java & Android Studio, supporting 100+ items with dynamic updates and inventory syncing.",
@@ -322,25 +373,25 @@ export const reviews = [
   {
     name: "Jack",
     username: "@jack",
-    body: "I trained in classical dance for nearly a decade",
+    body: "Trained in classical dance for nearly a decade",
     img: "https://robohash.org/jack",
   },
   {
     name: "Jill",
     username: "@jill",
-    body: "I began coding when I was in 8th grade",
+    body: "Began coding when I was in 8th grade",
     img: "https://robohash.org/jill",
   },
   {
     name: "John",
     username: "@john",
-    body: "I've practiced Yoga since childhood (thanks, Mom!)",
+    body: "Practiced Yoga since childhood (thanks, Mom!)",
     img: "https://robohash.org/john",
   },
   {
     name: "Alice",
     username: "@alice",
-    body: "I'm skilled in calligraphy",
+    body: "Learned Calligraphy!",
     img: "https://robohash.org/alice",
   },
   {
@@ -352,19 +403,19 @@ export const reviews = [
   {
     name: "Charlie",
     username: "@charlie",
-    body: "I used to participate in sports in school",
+    body: "Played multiple sports growing up",
     img: "https://robohash.org/charlie",
   },
   {
     name: "Dave",
     username: "@dave",
-    body: "I learned how to craft a teddy bear from scratch",
+    body: "Learned to make a soft toy from scratch",
     img: "https://robohash.org/dave",
   },
   {
     name: "Eve",
     username: "@eve",
-    body: "I love cooking, exploring new flavors and cuisines.",
+    body: "Love cooking, exploring new flavors and cuisines",
     img: "https://robohash.org/eve",
   },
 ];
